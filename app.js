@@ -4,8 +4,6 @@ const app = express();
 const route = require("./router");
 const Article = require("./article")
 //mongodb connection
-const username = "baruadeb058"
-const password = "WpwxpIX6dS2kAnMp"
 mongoose.connect(`mongodb+srv://${username}:${password}@cluster0.5gyhjza.mongodb.net/blogwebsite?retryWrites=true&w=majority&appName=Cluster0`).then(()=>{
     console.log("Database connected");
 }).catch( err => console.log("not connected"));
